@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anderson County Fair - The Best Six Days of Summer! Rides, food, games, pageants, truck pulls, and family fun. July 14-19, 2026 in Clinton, TN">
+    <meta name="theme-color" content="#D94F4F">
+    <title>Anderson County Fair 2026 | The Best Six Days of Summer | Clinton, TN</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <style>
+        /* CSS Variables for theming */
+        :root {
+            --primary: #D94F4F;
+            --secondary: #F7DC6F;
+            --accent: #5DADE2;
+            --dark: #2C3E50;
+            --light: #ECF0F1;
+            --success: #27AE60;
+            --gradient: linear-gradient(135deg, var(--primary) 0%, #E67E22 100%);
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Respect user motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+        }
+        
+        /* Typography */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+        
+        /* Skip to main content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--dark);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            box-shadow: var(--shadow);
+            z-index: 50;
+            view-transition-name: header;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo i {
+            -webkit-text-fill-color: var(--primary);
+        }
+        
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            color: var(--primary);
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-menu a:hover::after,
+        .nav-menu a:focus::after {
+            width: 100%;
+        }
+        
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+            
+            .nav-toggle[aria-expanded="true"] {
+                background: var(--primary);
+                color: white;
+            }
+            
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+                box-shadow: var(--shadow-lg);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            .nav-menu.active {
+                max-height: 400px;
+            }
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.03) 35px, rgba(255,255,255,.03) 70px);
+            pointer-events: none;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: white;
+            clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .hero-date {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Countdown Timer */
+        .countdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+        
+        .countdown-item {
+            background: rgba(255,255,255,0.95);
+            color: var(--primary);
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .countdown-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+            line-height: 1;
+            transition: transform 0.3s ease;
+        }
+        
+        @media (prefers-reduced-motion: no-preference) {
+            .countdown-value.flip {
+                animation: flipNumber 0.5s ease;
+            }
+            
+            @keyframes flipNumber {
+                0% {
+                    transform: rotateX(0deg);
+                }
+                50% {
+                    transform: rotateX(90deg);
+                }
+                100% {
+                    transform: rotateX(0deg);
+                }
+            }
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+        
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+            border-color: white;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        /* Sections */
+        section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section:nth-child(even) {
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        /* Scroll-driven animations */
+        @supports (animation-timeline: scroll()) {
+            @media (prefers-reduced-motion: no-preference) {
+                .fade-in {
+                    opacity: 0;
+                    transform: translateY(30px);
+                    animation: fade-in-up linear forwards;
+                    animation-timeline: view();
+                    animation-range: entry 0% cover 30%;
+                }
+                
+                @keyframes fade-in-up {
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+        
+        /* Fallback for browsers without scroll-driven animations */
+        @supports not (animation-timeline: scroll()) {
+            .fade-in {
+                animation: fade-in-up 0.6s ease-out forwards;
+            }
+            
+            @keyframes fade-in-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        
+        /* Highlights Grid */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .highlight-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .highlight-card:hover,
+        .highlight-card:focus-within {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Schedule */
+        .schedule-days {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .schedule-day {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .schedule-day h3 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .schedule-event {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .schedule-event:last-child {
+            border-bottom: none;
+        }
+        
+        .schedule-time {
+            font-weight: 700;
+            color: var(--accent);
+            min-width: 100px;
+        }
+        
+        .schedule-info h4 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .schedule-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Tickets */
+        .ticket-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .ticket-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .ticket-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .ticket-card.featured::before {
+            content: 'BEST VALUE';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .ticket-card:hover,
+        .ticket-card:focus-within {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .ticket-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        
+        .ticket-price span {
+            font-size: 1.5rem;
+        }
+        
+        .ticket-features {
+            list-style: none;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .ticket-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .ticket-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+        
+        /* Location */
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .location-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .location-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+        
+        .location-info h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .location-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .location-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .location-icon {
+            font-size: 1.5rem;
+            min-width: 30px;
+        }
+        
+        .map-container {
+            background: #ddd;
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover,
+        .faq-question:focus {
+            background: var(--light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question[aria-expanded="true"]::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 1rem 1rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+                text-align: left;
+            }
+        }
+        
+        .footer-section h4 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-section a:hover,
+        .footer-section a:focus {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .social-links {
+                justify-content: flex-start;
+            }
+        }
+        
+        .social-links a {
+            font-size: 1.5rem;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            opacity: 0.7;
+        }
+        
+        /* View Transitions API */
+        @supports (view-transition-name: auto) {
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.3s;
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            header, footer, .cta-buttons, .nav-toggle {
+                display: none;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* Photo Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-item:hover,
+        .gallery-item:focus {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img,
+        .gallery-item:focus img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay,
+        .gallery-item:focus .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-overlay h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .gallery-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        /* Video Section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video-wrapper.has-video {
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-wrapper iframe,
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-placeholder {
+            width: 100%;
+            padding: 3rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary) 0%, #E67E22 100%);
+            color: white;
+            flex-direction: column;
+            text-align: center;
+            min-height: 400px;
+        }
+        
+        .video-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .video-placeholder h3 {
+            margin-bottom: 1rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+        
+        .video-placeholder p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 500px;
+        }
+        
+        .video-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .video-link {
+            background: white;
+            color: var(--primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .video-link:hover,
+        .video-link:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 8px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            opacity: 0.7;
+        }
+        
+        .lightbox-caption {
+            color: white;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        
+        /* Social CTA Banner */
+        .social-banner {
+            background: var(--gradient);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+            pointer-events: none;
+        }
+        
+        .social-banner-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .social-banner h3 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 1rem;
+        }
+        
+        .social-banner p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .social-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .social-btn:hover,
+        .social-btn:focus {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .social-btn i {
+            font-size: 1.25rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover,
+        .back-to-top:focus {
+            background: var(--dark);
+            transform: translateY(-5px);
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --light: #2C3E50;
+                --dark: #ECF0F1;
+            }
+            
+            body {
+                background: #1a1a1a;
+            }
+            
+            section:nth-child(even) {
+                background: #2a2a2a;
+            }
+            
+            .highlight-card,
+            .schedule-day,
+            .ticket-card,
+            .location-info,
+            .faq-item {
+                background: #2a2a2a;
+                color: #ECF0F1;
+            }
+            
+            .faq-answer p,
+            .schedule-info p {
+                color: #bbb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#home" class="logo"><i class="fas fa-ferris-wheel" aria-hidden="true"></i> Anderson County Fair</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Anderson County Fair 2026</h1>
+                <div class="hero-date" aria-label="Event dates">July 14-19, 2026</div>
+                <p>The Best Six Days of Summer! Rides, food, pageants, truck pulls, and unforgettable family memories in Clinton, Tennessee.</p>
+                
+                <div class="countdown" role="timer" aria-live="polite" aria-atomic="true">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">--</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">--</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">--</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">--</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#tickets" class="btn btn-primary">Get Tickets</a>
+                    <a href="#schedule" class="btn btn-secondary">View Schedule</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Highlights Section -->
+        <section>
+            <div class="section-header fade-in">
+                <h2>Fair Highlights</h2>
+                <p>Something for everyone in the family!</p>
+            </div>
+            <div class="highlights">
+                <div class="highlight-card fade-in">
+                    <div class="highlight-icon" aria-hidden="true"><i class="fas fa-ferris-wheel"></i></div>
+                    <h3>Carnival Rides</h3>
+                    <p>Pay-One-Price unlimited ride armbands available nightly! From classic carousels to thrilling attractions.</p>
+                </div>
+                <div class="highlight-card fade-in">
+                    <div class="highlight-icon" aria-hidden="true"><i class="fas fa-burger"></i></div>
+                    <h3>Fair Food</h3>
+                    <p>Funnel cakes, corn dogs, fried Oreos, BBQ, ice-cold lemonade and all your favorite fair treats!</p>
+                </div>
+                <div class="highlight-card fade-in">
+                    <div class="highlight-icon" aria-hidden="true"><i class="fas fa-truck-monster"></i></div>
+                    <h3>Truck Pulls</h3>
+                    <p>Dash for Cash truck pulls on Thursday and Friday nights featuring 2WD, 4WD, and Outlaw divisions!</p>
+                </div>
+                <div class="highlight-card fade-in">
+                    <div class="highlight-icon" aria-hidden="true"><i class="fas fa-cow"></i></div>
+                    <h3>Livestock Shows</h3>
+                    <p>4-H goat, sheep, lamb, and beef shows. Plus Little Ponderosa Petting Zoo open every night!</p>
+                </div>
+                <div class="highlight-card fade-in">
+                    <div class="highlight-icon" aria-hidden="true"><i class="fas fa-crown"></i></div>
+                    <h3>Pageants</h3>
+                    <p>Fairest of the Fair pageants featuring multiple age divisions from Mini (4-5) to Senior (16-20).</p>
+                </div>
+                <div class="highlight-card fade-in">
+                    <div class="highlight-icon" aria-hidden="true"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Cash Giveaways</h3>
+                    <p>Nightly cash giveaways sponsored by local businesses. Plus extra truck pull cash prizes!</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Photo Gallery Section -->
+        <section id="gallery">
+            <div class="section-header fade-in">
+                <h2>Fair Memories</h2>
+                <p>Experience the excitement of the Anderson County Fair</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="View carnival rides photo">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&h=600&fit=crop&auto=format" 
+                         alt="Colorful carnival rides lit up at night at county fair" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4><i class="fas fa-ferris-wheel"></i> Carnival Rides</h4>
+                        <p>Thrilling rides for all ages</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="View fair food photo">
+                    <img src="https://images.unsplash.com/photo-1567608346775-5546e98c8e21?w=800&h=600&fit=crop&auto=format" 
+                         alt="Delicious funnel cake with powdered sugar at fair" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4><i class="fas fa-burger"></i> Fair Food</h4>
+                        <p>Funnel cakes, corn dogs & more!</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="View livestock show photo">
+                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=600&fit=crop&auto=format" 
+                         alt="Young person showing livestock at county fair" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4><i class="fas fa-cow"></i> Livestock Shows</h4>
+                        <p>4-H competitions & petting zoo</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="View truck pull photo">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop&auto=format" 
+                         alt="Monster truck at outdoor event" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4><i class="fas fa-truck-monster"></i> Truck Pulls</h4>
+                        <p>Dash for Cash competitions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="View live entertainment photo">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&h=600&fit=crop&auto=format" 
+                         alt="Live band performing on outdoor stage" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4><i class="fas fa-music"></i> Live Entertainment</h4>
+                        <p>Nightly performances & shows</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="View family fun photo">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=600&fit=crop&auto=format" 
+                         alt="Families enjoying summer festival together" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4><i class="fas fa-users"></i> Family Fun</h4>
+                        <p>Memories that last a lifetime</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: #666;">
+                    <i class="fas fa-camera"></i> Visit our <a href="https://www.facebook.com/andersoncountyfairtn/photos" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Facebook page</a> 
+                    and <a href="https://www.instagram.com/andersoncountyfair/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Instagram</a> for more photos!
+                </p>
+            </div>
+        </section>
+        
+        <!-- Video Section -->
+        <section id="video" style="background: white;">
+            <div class="section-header fade-in">
+                <h2>Watch the Fair in Action</h2>
+                <p>Get a preview of the best six days of summer!</p>
+            </div>
+            <div class="video-container fade-in">
+                <div class="video-wrapper">
+                    <div class="video-placeholder">
+                        <i class="fas fa-video"></i>
+                        <h3>Fair Highlights Video</h3>
+                        <p>Check out our social media for the latest videos from the Anderson County Fair!</p>
+                        <div class="video-links">
+                            <a href="https://www.facebook.com/andersoncountyfairtn/videos" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <i class="fab fa-facebook"></i> Facebook Videos
+                            </a>
+                            <a href="https://www.instagram.com/andersoncountyfair/" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <i class="fab fa-instagram"></i> Instagram Reels
+                            </a>
+                        </div>
+                    </div>
+                    <!-- To add actual video, replace the video-placeholder div with:
+                    <div class="video-wrapper has-video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+                                title="Anderson County Fair Video" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy"></iframe>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem; color: #666;">
+                <p><i class="fas fa-info-circle"></i> Video content updates regularly on our social media channels</p>
+            </div>
+        </section>
+        
+        <!-- Social Media CTA Banner -->
+        <div class="social-banner">
+            <div class="social-banner-content">
+                <h3><i class="fas fa-camera"></i> Share Your Fair Moments!</h3>
+                <p>Tag us in your Anderson County Fair photos and videos. Use #AndersonCountyFair #BestSixDaysOfSummer to be featured!</p>
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/andersoncountyfairtn" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <i class="fab fa-facebook"></i> Follow on Facebook
+                    </a>
+                    <a href="https://www.instagram.com/andersoncountyfair/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <i class="fab fa-instagram"></i> Follow on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <div class="section-header fade-in">
+                <h2>Event Schedule</h2>
+                <p>Plan your perfect fair day - Gates open at 5:00 PM nightly</p>
+            </div>
+            <div class="schedule-days">
+                <div class="schedule-day fade-in">
+                    <h3>Monday, July 14 - Fox Toyota Night</h3>
+                    <div class="schedule-event">
+                        <div class="schedule-time">5:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Gates Open - Kids Free Night!</h4>
+                            <p>Admission free for ages 15 & under (sponsored by Bear Stephenson and Blythe Sanders)</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Fairest of the Fair Pageants</h4>
+                            <p>Pre-Teen (10-11) and Princess (12-13) divisions</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Carnival Rides & Petting Zoo</h4>
+                            <p>Pay-One-Price armbands available. Little Ponderosa Petting Zoo open all evening</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Living Heritage Demonstrations</h4>
+                            <p>Traditional crafts and skills demonstrations until 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Live Music</h4>
+                            <p>Evening entertainment on the main stage until 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day fade-in">
+                    <h3>Tuesday, July 15 - Peoples Bank Night</h3>
+                    <div class="schedule-event">
+                        <div class="schedule-time">5:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Gates Open - Kids Free Night!</h4>
+                            <p>Admission free for ages 15 & under (sponsored by Rusty Wallace Chevrolet)</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Tiny Miss Pageants</h4>
+                            <p>Mini (4-5) and Tiny (6-7) divisions</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Holley Gamble Kid's Fun Night</h4>
+                            <p>Special activities for kids until 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Cash Giveaway</h4>
+                            <p>Sponsored by Gary's Body Shop - be present to win!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day fade-in">
+                    <h3>Wednesday, July 16 - Health Market Insurance Night</h3>
+                    <div class="schedule-event">
+                        <div class="schedule-time">11:30 AM</div>
+                        <div class="schedule-info">
+                            <h4>Gates Open - Senior Citizen Day</h4>
+                            <p>Special early opening for seniors with entertainment and activities</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">12:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>4-H Biscuit Making Demo</h4>
+                            <p>Living Heritage demonstration until 3:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">12:30 PM</div>
+                        <div class="schedule-info">
+                            <h4>Bear Stephenson Senior Citizen Celebration</h4>
+                            <p>Special programming for our senior guests</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">1:30 PM</div>
+                        <div class="schedule-info">
+                            <h4>Free Ice Cream!</h4>
+                            <p>Provided by Fox Farley Willis & Burnette Law Office</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">5:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Evening Gates Open - Kids Free Night!</h4>
+                            <p>Admission free for ages 15 & under (sponsored by Rogers Group/Powell-Clinch)</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>4-H Showcase</h4>
+                            <p>Youth showcase their projects and achievements</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Cash Giveaway</h4>
+                            <p>Sponsored by Gary's Body Shop</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day fade-in">
+                    <h3>Thursday, July 17 - Ray Varner Ford Night</h3>
+                    <div class="schedule-event">
+                        <div class="schedule-time">5:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Gates Open - Kids Free Night!</h4>
+                            <p>Admission free for ages 15 & under (sponsored by Food City)</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>4-H Goat Show</h4>
+                            <p>Sponsored by Anderson County Co-Op</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:30 PM</div>
+                        <div class="schedule-info">
+                            <h4>Lowes Tows Truck Pull - Dash for Cash!</h4>
+                            <p>2WD Stock, 4WD Stock & Outlaw Truck Pull divisions. $250 Cash Giveaway!</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Cash Giveaway & Live Music</h4>
+                            <p>Multiple cash prizes and evening entertainment until 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day fade-in">
+                    <h3>Friday, July 18 - Powell-Clinch Utility District Night</h3>
+                    <div class="schedule-event">
+                        <div class="schedule-time">5:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Gates Open</h4>
+                            <p>All attractions, rides, and vendors open for business</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Sheep & Lamb Show</h4>
+                            <p>Includes live sheep shearing demonstration! Sponsored by Anderson County Co-Op</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Lowes Tows Truck Pull - Dash for Cash!</h4>
+                            <p>Second night of high-octane truck pull action with cash prizes</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Cash Giveaway & Live Music</h4>
+                            <p>Multiple cash prizes and evening entertainment until 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day fade-in">
+                    <h3>Saturday, July 19 - Steve Pyatt Insurance Night</h3>
+                    <div class="schedule-event">
+                        <div class="schedule-time">5:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Gates Open - Kids Free Night!</h4>
+                            <p>Final night! Admission free for ages 15 & under (sponsored by SL Tennessee)</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Open Beef Show</h4>
+                            <p>At Underwood-McRae Pavilion, sponsored by Anderson County Co-Op</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Final Night Cash Giveaway!</h4>
+                            <p>Last chance to win big! Sponsored by Gary's Body Shop</p>
+                        </div>
+                    </div>
+                    <div class="schedule-event">
+                        <div class="schedule-time">7:00 PM</div>
+                        <div class="schedule-info">
+                            <h4>Closing Night Celebration</h4>
+                            <p>Live music and entertainment until 11:00 PM - don't miss the grand finale!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 12px;">
+                <p><strong><i class="fas fa-info-circle"></i> Important Notes:</strong></p>
+                <p>Kids 15 and under get FREE admission on sponsored nights. Petting zoo and Living Heritage demonstrations available most evenings. All schedules subject to change.</p>
+            </div>
+        </section>
+        
+        <!-- Tickets Section -->
+        <section id="tickets">
+            <div class="section-header fade-in">
+                <h2>Tickets & Pricing</h2>
+                <p>Choose the perfect option for your visit</p>
+            </div>
+            <div class="ticket-types">
+                <div class="ticket-card fade-in">
+                    <h3>General Admission</h3>
+                    <div class="ticket-price"><span>$</span>10</div>
+                    <ul class="ticket-features">
+                        <li>One night admission</li>
+                        <li>Parking included</li>
+                        <li>Access to all exhibits</li>
+                        <li>Free live entertainment</li>
+                        <li>Cash only at gate</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Pay at Gate</a>
+                </div>
+                
+                <div class="ticket-card featured fade-in">
+                    <h3>Season Pass</h3>
+                    <div class="ticket-price"><span>$</span>40</div>
+                    <ul class="ticket-features">
+                        <li>All six nights!</li>
+                        <li>Parking included</li>
+                        <li>Best value - Save $20!</li>
+                        <li>Access to all exhibits</li>
+                        <li>Free live entertainment</li>
+                        <li>Perfect for families</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Buy Season Pass</a>
+                </div>
+                
+                <div class="ticket-card fade-in">
+                    <h3>Ride Armband</h3>
+                    <div class="ticket-price"><span>$</span>20</div>
+                    <ul class="ticket-features">
+                        <li>Unlimited rides (1 night)</li>
+                        <li>Pay-One-Price special</li>
+                        <li>All carnival attractions</li>
+                        <li>Valid until closing</li>
+                        <li>Purchase with admission</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Buy at Fair</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: white; border-radius: 12px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p><strong><i class="fas fa-ticket-alt"></i> Special Offers:</strong></p>
+                <p><i class="fas fa-child"></i> Kids 6 and under: <strong>ALWAYS FREE</strong></p>
+                <p><i class="fas fa-star"></i> Kids 15 and under: <strong>FREE on sponsored nights</strong> (Mon, Tue, Wed, Thu, Sat)</p>
+                <p><i class="fas fa-hands-helping"></i> Senior Citizen Day: Wednesday 11:30 AM with free ice cream!</p>
+                <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> Gates open 5:00 PM nightly (11:30 AM Wednesday). Admission closes 1 hour before fair closing time.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Location Section -->
+        <section id="location">
+            <div class="section-header fade-in">
+                <h2>Location & Getting Here</h2>
+                <p>Find us at the Anderson County Fairgrounds in Clinton, TN</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info fade-in">
+                    <h3>Address & Information</h3>
+                    <div class="location-details">
+                        <div class="location-item">
+                            <div class="location-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Anderson County Fairgrounds</strong><br>
+                                939 North Charles G Seivers Blvd<br>
+                                Clinton, TN 37716
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon" aria-hidden="true"><i class="fas fa-parking"></i></div>
+                            <div>
+                                <strong>Parking</strong><br>
+                                Free parking included with admission. Ample parking available on fairgrounds.
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Hours</strong><br>
+                                Gates open 5:00 PM nightly (11:30 AM Wednesday for Senior Day). Closing times vary by night.
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon" aria-hidden="true"><i class="fas fa-universal-access"></i></div>
+                            <div>
+                                <strong>Accessibility</strong><br>
+                                ADA-compliant pathways and facilities throughout the fairgrounds.
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
+                            <div>
+                                <strong>Bag Policy</strong><br>
+                                Only clear bags and security-checked diaper bags allowed in the fair for everyone's safety.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container fade-in">
+                    <div>
+                        <p><i class="fas fa-map" style="font-size: 3rem; color: var(--primary);"></i></p>
+                        <p style="margin-top: 1rem; font-size: 1.1rem;"><strong>Interactive Map</strong></p>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+                            <a href="https://www.google.com/maps/place/939+N+Charles+G+Seivers+Blvd,+Clinton,+TN+37716" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">
+                                <i class="fas fa-external-link-alt"></i> Open in Google Maps
+                            </a>
+                        </p>
+                        <p style="font-size: 0.9rem; margin-top: 1rem;">
+                            <a href="https://andersoncountyfairtn.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600;">
+                                <i class="fas fa-globe"></i> View Fairgrounds Map
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What are the fair hours?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Gates open at 5:00 PM each evening Monday through Saturday (July 14-19). Wednesday is special - we open at 11:30 AM for Senior Citizen Day! The fair closes at 11:00 PM most nights, with admission gates closing 1 hour before fair closing time.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        How much does admission cost?
+                    </button>
+                    <div class="faq-answer">
+                        <p>General admission is $10 per night (cash only at gate) and includes parking. Kids 6 and under are ALWAYS free! Kids 15 and under get free admission on sponsored nights (Monday, Tuesday, Wednesday, Thursday, and Saturday). Season passes for all six nights are $40 - a great value!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I bring my own food and drinks?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Outside food and beverages are not permitted. We have fantastic food vendors offering all your fair favorites - funnel cakes, corn dogs, fried Oreos, BBQ, ice-cold lemonade, and much more at reasonable prices!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What's the bag policy?
+                    </button>
+                    <div class="faq-answer">
+                        <p>For everyone's safety, only clear bags and security-checked diaper bags are allowed into the fair. Small personal items should be in clear bags so security can easily verify contents at entry.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        Are pets allowed at the fair?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Only service animals are permitted at the fair. With the crowds, noise, livestock, and summer heat, the fairgrounds can be stressful for pets. Service animals are always welcome!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        How much are carnival rides?
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer Pay-One-Price unlimited ride armbands for $20 per night (does not include admission). This is the best way to enjoy all the carnival rides! Individual ride tickets may also be available at the midway.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        Can minors attend without parents?
+                    </button>
+                    <div class="faq-answer">
+                        <p>No individual under the age of 17 will be admitted without a parent or guardian. This policy helps ensure a safe, family-friendly environment for all fairgoers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What special events should I not miss?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Don't miss the Lowes Tows Truck Pull Dash for Cash on Thursday and Friday nights featuring 2WD, 4WD, and Outlaw divisions! Wednesday's Senior Citizen Day includes free ice cream. The Fairest of the Fair pageants run Monday and Tuesday. Plus, we have nightly cash giveaways sponsored by local businesses!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><strong>Anderson County Fair</strong><br>
+                939 N Charles G Seivers Blvd<br>
+                Clinton, TN 37716<br>
+                Email: info@andersoncountyfairtn.com<br>
+                Phone: (865) 457-7440</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/andersoncountyfairtn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/andersoncountyfair" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://andersoncountyfairtn.com" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#schedule"><i class="fas fa-calendar-alt"></i> Event Schedule</a></p>
+                <p><a href="#tickets"><i class="fas fa-ticket-alt"></i> Buy Tickets</a></p>
+                <p><a href="#location"><i class="fas fa-map-marker-alt"></i> Directions</a></p>
+                <p><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Get Involved</h4>
+                <p><a href="https://andersoncountyfairtn.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-store"></i> Vendor Applications</a></p>
+                <p><a href="https://andersoncountyfairtn.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-trophy"></i> Enter Exhibits</a></p>
+                <p><a href="https://andersoncountyfairtn.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-handshake"></i> Sponsorship</a></p>
+                <p><a href="https://andersoncountyfairtn.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-hands-helping"></i> Volunteer</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anderson County Fair - The Best Six Days of Summer! All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">A proud tradition of Anderson County, Tennessee</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const fairDate = new Date('July 14, 2026 17:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = fairDate - now;
+            
+            if (distance < 0) {
+                document.querySelector('.countdown').innerHTML = '<p style="font-size: 1.5rem; font-weight: 700;">The Fair is Here! 🎉</p>';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Update with flip animation
+            updateCountdownValue('days', days);
+            updateCountdownValue('hours', hours.toString().padStart(2, '0'));
+            updateCountdownValue('minutes', minutes.toString().padStart(2, '0'));
+            updateCountdownValue('seconds', seconds.toString().padStart(2, '0'));
+        }
+        
+        function updateCountdownValue(id, newValue) {
+            const element = document.getElementById(id);
+            if (element && element.textContent !== newValue.toString()) {
+                element.classList.add('flip');
+                element.textContent = newValue;
+                setTimeout(() => element.classList.remove('flip'), 500);
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const isExpanded = question.getAttribute('aria-expanded') === 'true';
+                const answer = question.nextElementSibling;
+                
+                // Close all other FAQs
+                faqQuestions.forEach(q => {
+                    if (q !== question) {
+                        q.setAttribute('aria-expanded', 'false');
+                        q.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current FAQ
+                question.setAttribute('aria-expanded', !isExpanded);
+                answer.classList.toggle('active');
+            });
+        });
+        
+        // View Transitions API
+        if (document.startViewTransition) {
+            // Intercept navigation for smooth transitions
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    const targetId = anchor.getAttribute('href');
+                    const target = document.querySelector(targetId);
+                    
+                    if (target) {
+                        e.preventDefault();
+                        
+                        document.startViewTransition(() => {
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Lazy load fade-in animations for browsers without scroll-driven animations support
+        if (!CSS.supports('animation-timeline: scroll()')) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        }
+        
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href === '') return;
+                
+                const target = document.querySelector(href);
+                if (!target) return;
+                
+                e.preventDefault();
+                
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add active state to navigation based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        function updateActiveNav() {
+            const scrollY = window.pageYOffset;
+            
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav();
+        
+        // Prevent default form submission (for demo purposes)
+        document.querySelectorAll('a[href="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.classList.contains('btn')) {
+                    e.preventDefault();
+                    alert('This is a demo. In production, this would link to your ticketing system!');
+                }
+            });
+        });
+        
+        // Gallery Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        // Open lightbox
+        function openLightbox(imgSrc, imgAlt, caption) {
+            lightboxImg.src = imgSrc;
+            lightboxImg.alt = imgAlt;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lightboxClose.focus();
+        }
+        
+        // Close lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Add click/enter handlers to gallery items
+        galleryItems.forEach(item => {
+            const handleOpen = () => {
+                const img = item.querySelector('img');
+                const overlay = item.querySelector('.gallery-overlay');
+                const title = overlay.querySelector('h4').textContent;
+                openLightbox(img.src, img.alt, title);
+            };
+            
+            item.addEventListener('click', handleOpen);
+            
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleOpen();
+                }
+            });
+        });
+        
+        // Close lightbox on button click
+        lightboxClose.addEventListener('click', closeLightbox);
+        
+        // Close lightbox on background click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        
+        // Close lightbox on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+        
+        // Lazy loading images with Intersection Observer (fallback for older browsers)
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            // Observe all lazy images
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
